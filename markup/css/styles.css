@@ -85,6 +85,7 @@ main span {
     font-family: "HelveticaNeue Light", sans-serif;
 }
 
+/*
 .arrow {
     background: url(../images/arrow-btn.jpg) 21px 28px no-repeat;
     display: block;
@@ -94,6 +95,23 @@ main span {
     border: 3px solid #fff;
     border-radius: 40px;
     transition: transform 0.5s ease-out;
+}
+*/
+
+.arrow {
+    display: block;
+    width:65px;
+    height: 65px;
+    margin: 0 auto 2.8%;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    transition: transform 0.5s ease-out;
+}
+
+.arrow .fa {
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1.6;
 }
 
 .arrow:hover {
@@ -106,7 +124,7 @@ main span {
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-bottom: 30px solid #fff;
-    margin-bottom: -0.5%;
+    margin-bottom: -0.8%;
 }
 
 .submit {
@@ -117,18 +135,38 @@ main span {
     position: relative;
     box-sizing: border-box;
 }
-
+/*
 .close {
     display: block;
     position: absolute;
     top: -4.5%;
     right: -3.6%;
     background: url(../images/close.jpg) 17px 16px no-repeat,
-    linear-gradient(to top, #de2b24, #de2b24);;
+    linear-gradient(to top, #de2b24, #de2b24);
     width: 50px;
     height: 50px;
     border: 3px solid #fff;
     border-radius: 40px;
+}
+*/
+
+.close {
+    display: block;
+    position: absolute;
+    top: -4.5%;
+    right: -3.6%;
+    background-color: #de2b24;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    line-height: 1.6;
+}
+
+.close .fa {
+    color: #fff;
+    font-size: 1.8em;
+    line-height: 1.6;
 }
 
 .submit p {
