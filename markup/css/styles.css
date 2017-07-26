@@ -34,6 +34,13 @@ h4 {
     display: flex;
     flex-wrap: wrap;
 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+
     /*for IE*/
     display: -ms-flexbox;
     -ms-flex-wrap: wrap;
@@ -68,6 +75,12 @@ h4 {
     margin: 30% auto 8%;
 }
 
+.chess li i {
+    opacity: 0.5;
+    font-size: 2.5em;
+    padding: 30% 0 10%;
+}
+
 main {
     background-color: #1287bf;
     text-align: center;
@@ -84,19 +97,6 @@ main span {
     margin-bottom: 1.5%;
     font-family: "HelveticaNeue Light", sans-serif;
 }
-
-/*
-.arrow {
-    background: url(../images/arrow-btn.jpg) 21px 28px no-repeat;
-    display: block;
-    width: 66px;
-    height: 64px;
-    margin: 0 auto 2.8%;
-    border: 3px solid #fff;
-    border-radius: 40px;
-    transition: transform 0.5s ease-out;
-}
-*/
 
 .arrow {
     display: block;
@@ -135,20 +135,6 @@ main span {
     position: relative;
     box-sizing: border-box;
 }
-/*
-.close {
-    display: block;
-    position: absolute;
-    top: -4.5%;
-    right: -3.6%;
-    background: url(../images/close.jpg) 17px 16px no-repeat,
-    linear-gradient(to top, #de2b24, #de2b24);
-    width: 50px;
-    height: 50px;
-    border: 3px solid #fff;
-    border-radius: 40px;
-}
-*/
 
 .close {
     display: block;
@@ -172,7 +158,7 @@ main span {
 .submit p {
     color: #828282;
     margin-bottom: 7%;
-    font-family: "HelveticaNeue Light", sans-serif;
+    font-family: "HelveticaNeue Medium", sans-serif;
     font-size: 0.97em;
     text-align: center;
     line-height: 1.4;
@@ -236,16 +222,23 @@ footer h4 {
 }
 
 .socials {
+    margin-bottom: 7%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -o-flex-direction: row;
 
     /*for IE*/
     display: -ms-flexbox;
     -ms-flex-direction: row;
     -ms-flex-pack: center;
-
-    margin-bottom: 7%;
 }
 
 .socials li {
@@ -270,18 +263,17 @@ footer h4 {
     border: 2px solid #de2b24;
 }
 
-.socials li img {
-    margin-top: 28%;
-}
-
-.subscribe {
-    font-family: "HelveticaNeue Light", sans-serif;
+.socials i {
+    font-size: 1.6em;
+    color: #fff;
+    line-height: 1.7;
 }
 
 .subscribe p {
     font-size: 0.9em;
     margin-bottom: 4.5%;
     color: #cecece;
+    font-family: "OpenSans-Regular", sans-serif;
 }
 
 .subscribe input {
@@ -291,6 +283,7 @@ footer h4 {
     padding: 3%;
     margin-bottom: 4.5%;
     color: #cecece;
+    font-family: "OpenSans-Regular", sans-serif;
 }
 
 .subscribe input:focus {
@@ -299,13 +292,13 @@ footer h4 {
 
 .subscribe input::-moz-placeholder {
     font-size: 1.1em;
-    font-family: "HelveticaNeue Medium", sans-serif;
+    font-family: "OpenSans-Regular", sans-serif;
     color: #cecece;
 }
 .subscribe input::-webkit-input-placeholder {
     font-size: 1.1em;
-    font-family: "HelveticaNeue Medium", sans-serif;
     color: #cecece;
+    font-family: "OpenSans-Regular", sans-serif;
 }
 
 .subscribe button {
